@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARCA Sorocaba | Link na Bio</title>
+<meta name="description" content="ARCA Sorocaba: acolhemos pessoas adultas com deficiência intelectual há mais de 10 anos. Seja um Guardião, conheça os eventos, o bazar solidário e fale com a gente.">
+<meta property="og:title" content="ARCA Sorocaba">
+<meta property="og:description" content="Acolhemos pessoas adultas com deficiência intelectual há mais de 10 anos. Aqui, ninguém é abandonado quando a infância acaba.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo-arca.png">
+<meta name="theme-color" content="#192299">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ARCA Sorocaba — Link na Bio
+   Mesma identidade visual do site principal (arcasorocaba.com.br): azul ARCA,
+   Montserrat/Poppins, cartões brancos sobre fundo navy, mesmo padrão de PIX/WhatsApp. */
+
+:root{
+  --blue:#192299;
+  --blue-dark:#141B77;
+  --blue-bright:#5960B6;
+  --navy:#0B1D3F;
+  --page-bg:#071228;
+  --tint:#EEF3FF;
+  --tint-border:#D6E1FB;
+  --soft:#F4F7FE;
+  --soft-border:#E2E9F7;
+  --body:#4A5B78;
+  --muted:#5A6C8C;
+  --on-navy:#9FB6E4;
+  --on-navy-accent:#7FA0F0;
+  --on-navy-muted:#6E86B8;
+  --on-navy-line:rgba(255,255,255,.14);
+  --r-xl:clamp(14px,1.6vw,24px);
+  --r-lg:clamp(12px,1.3vw,18px);
+  --r-md:clamp(10px,1.1vw,16px);
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--page-bg);scrollbar-color:var(--blue) var(--page-bg);scrollbar-width:thin}
+body{margin:0;background:var(--page-bg);color:var(--navy);font-family:'Poppins','Segoe UI',sans-serif;font-weight:500;letter-spacing:.01em;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:var(--page-bg)}
+::-webkit-scrollbar-thumb{background:var(--blue-bright);border-radius:20px;border:3px solid var(--page-bg)}
+
+/* decorative backdrop, matches the site's dark hero sections */
+.bg-decor{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:
+  radial-gradient(120% 60% at 50% -10%, rgba(89,96,182,.35), transparent 60%),
+  radial-gradient(90% 50% at 100% 110%, rgba(27,69,232,.28), transparent 60%),
+  var(--page-bg)}
+.bg-decor::before,.bg-decor::after{content:"";position:absolute;border-radius:50%;filter:blur(60px);opacity:.35}
+.bg-decor::before{width:420px;height:420px;background:var(--blue-bright);top:-140px;left:-120px}
+.bg-decor::after{width:520px;height:520px;background:var(--blue);bottom:-220px;right:-160px}
+
+.wrap{position:relative;z-index:1;max-width:600px;margin:0 auto;padding:clamp(28px,6vw,56px) clamp(18px,4vw,24px) 40px}
+
+/* ---------- identidade ---------- */
+.identity{text-align:center;margin-bottom:clamp(22px,4vw,30px)}
+.identity .logo{width:clamp(92px,20vw,116px);margin:0 auto 16px;border-radius:22px;background:#fff;padding:10px;box-shadow:0 18px 40px rgba(4,10,26,.45)}
+.identity h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(1.5rem,5vw,1.9rem);letter-spacing:-.02em;color:#fff;margin:0 0 8px}
+.identity .subtitle{font-size:.98rem;line-height:1.55;color:var(--on-navy);max-width:36ch;margin:0 auto 12px}
+.identity .tagline{font-style:italic;font-weight:600;font-size:.98rem;color:var(--on-navy-accent);margin:0}
+
+/* ---------- selos de prova ---------- */
+.trust{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:18px 0 clamp(24px,4.5vw,32px)}
+.trust span{display:inline-flex;align-items:center;gap:6px;font-family:Montserrat,sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.02em;color:#fff;background:rgba(255,255,255,.08);border:1px solid var(--on-navy-line);padding:8px 13px;border-radius:100px;white-space:nowrap}
+
+/* ---------- botões principais ---------- */
+.links{display:flex;flex-direction:column;gap:12px;margin-bottom:clamp(30px,5vw,40px)}
+.link-card{position:relative;display:flex;align-items:center;gap:14px;padding:16px 18px;background:#fff;border:1px solid var(--soft-border);border-radius:var(--r-lg);text-decoration:none;transition:all .35s var(--ease)}
+.link-card:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(4,10,26,.35);border-color:var(--blue)}
+.link-card .icon{flex:none;width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:1.35rem;background:var(--tint)}
+.link-card .txt{flex:1;min-width:0}
+.link-card .txt strong{display:block;font-family:Montserrat,sans-serif;font-weight:800;font-size:1.02rem;color:var(--navy);margin-bottom:2px}
+.link-card .txt span{display:block;font-size:.86rem;line-height:1.4;color:var(--muted)}
+.link-card .arrow{flex:none;font-size:1.1rem;color:var(--muted);transition:transform .35s var(--ease)}
+.link-card:hover .arrow{transform:translateX(4px);color:var(--blue)}
+
+.link-card.featured{background:var(--blue);border-color:var(--blue);box-shadow:0 18px 40px rgba(27,69,232,.4)}
+.link-card.featured .icon{background:rgba(255,255,255,.16)}
+.link-card.featured .txt strong{color:#fff}
+.link-card.featured .txt span{color:var(--on-navy)}
+.link-card.featured .arrow{color:#fff}
+.link-card.featured:hover{background:var(--blue-dark);border-color:var(--blue-dark)}
+.link-card.featured .badge{position:absolute;top:-10px;right:16px;background:#fff;color:var(--blue);font-family:Montserrat,sans-serif;font-weight:800;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:100px;box-shadow:0 8px 16px rgba(4,10,26,.25)}
+
+/* ---------- cartão genérico ---------- */
+.card{background:#fff;border-radius:var(--r-xl);border:1px solid var(--soft-border);padding:clamp(20px,4vw,28px);margin-bottom:16px}
+.card h2{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(1.1rem,3vw,1.28rem);color:var(--navy);margin:0 0 10px;letter-spacing:-.01em}
+.card p{font-size:.96rem;line-height:1.62;color:var(--body);margin:0}
+.card p + p{margin-top:10px}
+.card strong{color:var(--navy)}
+
+/* ---------- avaliações ---------- */
+.rating{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.rating .stars{font-size:1.25rem;color:#F5A623;letter-spacing:2px}
+.rating .score{font-family:Montserrat,sans-serif;font-weight:800;font-size:1.6rem;color:var(--navy)}
+.rating .label{font-size:.82rem;color:var(--muted)}
+.rating-link{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-family:Montserrat,sans-serif;font-weight:700;font-size:.88rem;color:var(--blue);text-decoration:none}
+.rating-link:hover{text-decoration:underline}
+
+/* ---------- vídeos ---------- */
+.videos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.video-slot{aspect-ratio:9/16;border-radius:var(--r-md);border:1.5px dashed var(--tint-border);background:var(--soft);display:flex;align-items:center;justify-content:center;text-align:center;padding:8px}
+.video-slot span{font-size:.72rem;line-height:1.4;color:var(--muted)}
+
+/* ---------- PIX ---------- */
+.pix-card{background:var(--navy);border-radius:var(--r-xl);padding:clamp(20px,4vw,28px);margin-bottom:16px;color:#fff}
+.pix-card h2{color:#fff}
+.pix-card .pix-desc{font-size:.94rem;line-height:1.6;color:var(--on-navy);margin:0 0 16px}
+.pix-key{display:flex;align-items:center;justify-content:space-between;gap:10px;background:rgba(255,255,255,.08);border:1px solid var(--on-navy-line);border-radius:12px;padding:12px 14px;margin-bottom:12px}
+.pix-key-label{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--on-navy-muted);margin-bottom:3px}
+.pix-key-value{font-family:Montserrat,sans-serif;font-weight:800;font-size:1rem;color:#fff}
+.pix-copy-btn{width:100%;min-height:52px;border:none;border-radius:12px;background:#fff;color:var(--blue);font-family:Montserrat,sans-serif;font-weight:800;font-size:.98rem;cursor:pointer;transition:all .35s var(--ease)}
+.pix-copy-btn:hover{background:var(--tint);transform:translateY(-2px)}
+.pix-copied{max-height:0;overflow:hidden;opacity:0;font-size:.84rem;line-height:1.5;color:var(--on-navy-accent);margin:0;transition:all .4s var(--ease)}
+.pix-copied.is-visible{max-height:80px;opacity:1;margin-top:12px}
+
+/* ---------- localização ---------- */
+.map-frame{border-radius:var(--r-md);overflow:hidden;border:1px solid var(--soft-border);margin:14px 0}
+.map-frame iframe{width:100%;height:220px;border:0;display:block}
+.address{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;line-height:1.55;color:var(--body);margin-bottom:14px}
+.address .pin{flex:none;font-size:1.1rem}
+.btn-route{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:50px;border-radius:12px;background:var(--tint);color:var(--blue);font-family:Montserrat,sans-serif;font-weight:700;font-size:.92rem;text-decoration:none;border:1px solid var(--tint-border);transition:all .35s var(--ease)}
+.btn-route:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+
+/* ---------- redes sociais ---------- */
+.social-row{display:flex;justify-content:center;gap:12px;margin:8px 0 clamp(28px,5vw,36px)}
+.social-row a{width:48px;height:48px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid var(--on-navy-line);display:grid;place-items:center;font-size:1.3rem;text-decoration:none;transition:all .35s var(--ease)}
+.social-row a:hover{background:var(--blue);border-color:var(--blue);transform:translateY(-3px)}
+
+/* ---------- rodapé ---------- */
+footer.site-foot{text-align:center;color:var(--on-navy-muted)}
+footer.site-foot .quote{font-style:italic;font-weight:600;font-size:.94rem;color:var(--on-navy-accent);margin:0 0 10px}
+footer.site-foot .meta{font-size:.78rem;line-height:1.6;margin:0}
+
+@media (max-width:400px){
+  .videos-grid{gap:8px}
+  .trust span{font-size:.68rem;padding:7px 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="bg-decor" aria-hidden="true"></div>
+
+<main class="wrap">
+
+  <!-- BLOCO 1: topo / identidade -->
+  <header class="identity">
+    <img class="logo" src="logo-arca.png" alt="ARCA Sorocaba">
+    <h1>ARCA Sorocaba</h1>
+    <p class="subtitle">Acolhemos pessoas adultas com deficiência intelectual há mais de 10 anos.</p>
+    <p class="tagline">Aqui, ninguém é abandonado quando a infância acaba.</p>
+  </header>
+
+  <!-- BLOCO 2: prova imediata -->
+  <div class="trust">
+    <span>⭐ 5,0 no Google</span>
+    <span>💙 +10 anos em Sorocaba</span>
+    <span>🌍 Rede internacional L'Arche</span>
+  </div>
+
+  <!-- BLOCO 3: botões principais -->
+  <nav class="links" aria-label="Formas de ajudar a ARCA">
+    <a class="link-card featured" href="https://arcasorocaba.sitepreviavisual.site/index.html#doar" target="_blank" rel="noopener">
+      <span class="badge">Destaque</span>
+      <span class="icon">💙</span>
+      <span class="txt">
+        <strong>Seja um Guardião da ARCA</strong>
+        <span>Doe todo mês e mantenha esta casa de portas abertas.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link-card" href="https://www.instagram.com/channel/AbY5HcxELzVrupCD/" target="_blank" rel="noopener">
+      <span class="icon">🍽️</span>
+      <span class="txt">
+        <strong>Eventos do mês</strong>
+        <span>Feijoada, almoço solidário, bazar e mais.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link-card" href="https://chat.whatsapp.com/GYWs40T8hMe7V15NZbAdEo" target="_blank" rel="noopener">
+      <span class="icon">🛍️</span>
+      <span class="txt">
+        <strong>Grupo do Bazar</strong>
+        <span>Roupas e acessórios acessíveis. Cada peça ajuda.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="link-card" href="https://wa.me/5515991142594?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20ARCA%20Sorocaba." target="_blank" rel="noopener">
+      <span class="icon">💬</span>
+      <span class="txt">
+        <strong>Falar com a ARCA</strong>
+        <span>Dúvidas, visitas, parcerias, voluntariado.</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+  </nav>
+
+  <!-- BLOCO 4: quem somos -->
+  <section class="card">
+    <h2>Quem somos</h2>
+    <p>A ARCA Sorocaba é uma associação beneficente que acolhe pessoas adultas com deficiência intelectual. Aqui elas encontram oficinas, convivência, acompanhamento de equipe e, principalmente, <strong>autonomia</strong>. A ARCA também acompanha e orienta as famílias.</p>
+    <p>Não recebemos verba pública. A casa se mantém com doações, bazar e ações solidárias.</p>
+  </section>
+
+  <!-- BLOCO 5: vídeos dos acolhidos -->
+  <section class="card">
+    <h2>Quem melhor para falar da ARCA do que quem vive nela?</h2>
+    <p>Em breve, vídeos curtos dos próprios acolhidos contando como é o dia a dia na ARCA.</p>
+    <div class="videos-grid" aria-hidden="true">
+      <div class="video-slot"><span>Vídeo em breve</span></div>
+      <div class="video-slot"><span>Vídeo em breve</span></div>
+      <div class="video-slot"><span>Vídeo em breve</span></div>
+    </div>
+  </section>
+
+  <!-- BLOCO 6: avaliações do Google -->
+  <section class="card">
+    <h2>Avaliações no Google</h2>
+    <div class="rating">
+      <span class="score">5,0</span>
+      <div>
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <div class="label">nota média no Google</div>
+      </div>
+    </div>
+    <a class="rating-link" href="https://www.google.com/maps/search/?api=1&query=ARCA+Sorocaba+Av.+Santos+Dumont+100+Sorocaba+SP" target="_blank" rel="noopener">Ver todas as avaliações no Google →</a>
+  </section>
+
+  <!-- BLOCO 7: doação direta via PIX -->
+  <section class="pix-card">
+    <h2>Doação direta pelo PIX</h2>
+    <p class="pix-desc">Manter a ARCA custa cerca de <strong style="color:#fff">R$ 30 mil por mês</strong>. Cada doação sustenta uma rotina de cuidado, convivência e dignidade.</p>
+    <div class="pix-key">
+      <div>
+        <span class="pix-key-label">Chave PIX oficial · CNPJ</span>
+        <strong class="pix-key-value">19.831.448/0001-85</strong>
+      </div>
+    </div>
+    <button type="button" id="pixCopyBtn" class="pix-copy-btn">Copiar chave PIX</button>
+    <p role="status" id="pixCopiedMsg" class="pix-copied">Chave copiada. Obrigado por apoiar a ARCA. Agora abra o app do seu banco, escolha PIX, cole a chave e confirme o valor.</p>
+  </section>
+
+  <!-- BLOCO 8: onde estamos -->
+  <section class="card">
+    <h2>Onde estamos</h2>
+    <div class="address">
+      <span class="pin">📍</span>
+      <span>Av. Santos Dumont, 100 — Jardim Ana Maria, Sorocaba/SP, 18065-290</span>
+    </div>
+    <div class="map-frame">
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa até a ARCA Sorocaba" src="https://www.google.com/maps?q=Av.+Santos+Dumont,+100,+Jardim+Ana+Maria,+Sorocaba+-+SP,+18065-290&output=embed"></iframe>
+    </div>
+    <a class="btn-route" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Santos+Dumont,+100,+Jardim+Ana+Maria,+Sorocaba+-+SP,+18065-290" target="_blank" rel="noopener">Como chegar →</a>
+  </section>
+
+  <!-- BLOCO 9: redes sociais (sem Instagram: esta própria página é o link da bio do Instagram) -->
+  <div class="social-row" aria-label="Outras redes da ARCA">
+    <a href="https://www.facebook.com/search/top?q=ARCA%20de%20Sorocaba" target="_blank" rel="noopener" aria-label="ARCA no Facebook" title="Facebook">📘</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=ARCA+Sorocaba+Av.+Santos+Dumont+100+Sorocaba+SP" target="_blank" rel="noopener" aria-label="Perfil da ARCA no Google" title="Google">📍</a>
+    <a href="https://wa.me/5515991142594" target="_blank" rel="noopener" aria-label="WhatsApp da ARCA" title="WhatsApp">💬</a>
+  </div>
+
+  <!-- BLOCO 10: rodapé -->
+  <footer class="site-foot">
+    <p class="quote">"A doação é a linguagem mais linda do amor."</p>
+    <p class="meta">ARCA Sorocaba · ABAAS · CNPJ 19.831.448/0001-85</p>
+  </footer>
+
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var pixCopyBtn = document.getElementById('pixCopyBtn');
+  var pixCopiedMsg = document.getElementById('pixCopiedMsg');
+  var PIX_KEY = '19.831.448/0001-85';
+  var pixTimer;
+
+  if (pixCopyBtn) {
+    pixCopyBtn.addEventListener('click', function () {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(PIX_KEY).catch(function () {});
+      }
+      pixCopiedMsg.classList.add('is-visible');
+      clearTimeout(pixTimer);
+      pixTimer = setTimeout(function () {
+        pixCopiedMsg.classList.remove('is-visible');
+      }, 9000);
+    });
+  }
+})();
+</script>
+</body>
+</html>
