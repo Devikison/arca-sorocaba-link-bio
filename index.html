@@ -120,11 +120,6 @@ a{color:inherit}
 .rating-link .arrow-btn svg{width:14px;height:14px}
 .rating-link:hover .arrow-btn{background:var(--blue);color:#fff;transform:translateX(3px);box-shadow:0 6px 14px rgba(27,69,232,.4)}
 
-/* ---------- vídeos ---------- */
-.videos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
-.video-slot{aspect-ratio:9/16;border-radius:var(--r-md);border:1.5px dashed var(--tint-border);background:var(--soft);display:flex;align-items:center;justify-content:center;text-align:center;padding:8px}
-.video-slot span{font-size:.72rem;line-height:1.4;color:var(--muted)}
-
 /* ---------- PIX ---------- */
 .pix-card{background:var(--navy);border-radius:var(--r-xl);padding:clamp(20px,4vw,28px);margin-bottom:16px;color:#fff}
 .pix-card h2{color:#fff}
@@ -160,7 +155,6 @@ footer.site-foot .quote{font-style:italic;font-weight:600;font-size:.94rem;color
 footer.site-foot .meta{font-size:.78rem;line-height:1.6;margin:0}
 
 @media (max-width:400px){
-  .videos-grid{gap:8px}
   .trust span{font-size:.68rem;padding:7px 11px}
 }
 </style>
@@ -231,17 +225,6 @@ footer.site-foot .meta{font-size:.78rem;line-height:1.6;margin:0}
     <h2>Quem somos</h2>
     <p>A ARCA Sorocaba é uma associação beneficente que acolhe pessoas adultas com deficiência intelectual. Aqui elas encontram oficinas, convivência, acompanhamento de equipe e, principalmente, <strong>autonomia</strong>. A ARCA também acompanha e orienta as famílias.</p>
     <p>Não recebemos verba pública. A casa se mantém com doações, bazar e ações solidárias.</p>
-  </section>
-
-  <!-- BLOCO 5: vídeos dos acolhidos -->
-  <section class="card">
-    <h2>Quem melhor para falar da ARCA do que quem vive nela?</h2>
-    <p>Em breve, vídeos curtos dos próprios acolhidos contando como é o dia a dia na ARCA.</p>
-    <div class="videos-grid" aria-hidden="true">
-      <div class="video-slot"><span>Vídeo em breve</span></div>
-      <div class="video-slot"><span>Vídeo em breve</span></div>
-      <div class="video-slot"><span>Vídeo em breve</span></div>
-    </div>
   </section>
 
   <!-- BLOCO 6: avaliações do Google -->
