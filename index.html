@@ -2,323 +2,181 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>ARCA Sorocaba | Link na Bio</title>
 <link rel="canonical" href="https://arcasorocaba.com.br/bio/">
-<meta name="description" content="ARCA Sorocaba: acolhemos pessoas adultas com deficiência intelectual há mais de 10 anos. Seja um Guardião, conheça os eventos, o bazar solidário e fale com a gente.">
+<meta name="description" content="ARCA Sorocaba: acolhemos pessoas adultas com deficiência intelectual há mais de 10 anos. Seja um Guardião, doe pelo PIX ou fale com a gente.">
+<meta name="theme-color" content="#F6C61D">
+<meta name="format-detection" content="telephone=no">
 <meta property="og:title" content="ARCA Sorocaba">
 <meta property="og:description" content="Acolhemos pessoas adultas com deficiência intelectual há mais de 10 anos. Aqui, ninguém é abandonado quando a infância acaba.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://arcasorocaba.com.br/bio/">
 <meta property="og:image" content="https://arcasorocaba.com.br/assets/img/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://arcasorocaba.com.br/bio/">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="ARCA Sorocaba">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#192299">
-<meta name="format-detection" content="telephone=no">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="logo-arca.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"NGO","name":"ARCA Sorocaba","legalName":"Associação Beneficente Amigos da Arca de Sorocaba","taxID":"19.831.448/0001-85","url":"https://arcasorocaba.com.br/","telephone":"+5515997124769","address":{"@type":"PostalAddress","streetAddress":"Av. Santos Dumont, 100, Jardim Ana Maria","addressLocality":"Sorocaba","addressRegion":"SP","postalCode":"18065-290","addressCountry":"BR"}}
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
-/* ARCA Sorocaba: Link na Bio
-   Mesma identidade visual do site principal (arcasorocaba.com.br): azul ARCA,
-   Montserrat/Poppins, cartões brancos sobre fundo navy, mesmo padrão de PIX/WhatsApp. */
-
+/* ARCA Sorocaba: Link na Bio. Mesmo visual do site oficial: as cores do mural da casa. */
 :root{
-  --blue:#192299;
-  --blue-dark:#141B77;
-  --blue-bright:#5960B6;
-  --navy:#0B1D3F;
-  --page-bg:#071228;
-  --tint:#EEF3FF;
-  --tint-border:#D6E1FB;
-  --soft:#F4F7FE;
-  --soft-border:#E2E9F7;
-  --body:#4A5B78;
-  --muted:#5A6C8C;
-  --on-navy:#9FB6E4;
-  --on-navy-accent:#7FA0F0;
-  --on-navy-muted:#6E86B8;
-  --on-navy-line:rgba(255,255,255,.14);
-  --r-xl:clamp(14px,1.6vw,24px);
-  --r-lg:clamp(12px,1.3vw,18px);
-  --r-md:clamp(10px,1.1vw,16px);
-  --ease:cubic-bezier(.22,1,.36,1);
+  --yellow:#F6C61D;--blue:#192299;--navy:#0B1D3F;--sky:#8CCDF0;--paper:#F5F7FC;--paper-2:#E7ECF7;--white:#FDFDFE;--muted:#3C4C6B;
+  --m:16px;--ease:cubic-bezier(.22,1,.36,1);
 }
-
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;background:var(--page-bg);scrollbar-color:var(--blue) var(--page-bg);scrollbar-width:thin}
-body{margin:0;background:var(--page-bg);color:var(--navy);font-family:'Poppins','Segoe UI',sans-serif;font-weight:500;letter-spacing:.01em;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+html{-webkit-text-size-adjust:100%;background:var(--navy)}
+body{margin:0;background:var(--navy);color:var(--navy);font-family:'Poppins','Segoe UI',sans-serif;font-size:17px;line-height:1.5}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:'Montserrat','Segoe UI',sans-serif;margin:0;text-wrap:balance}
+p{margin:0 0 .9em}p:last-child{margin-bottom:0}
+strong{font-weight:600}
 a{color:inherit}
-::-webkit-scrollbar{width:12px;height:12px}
-::-webkit-scrollbar-track{background:var(--page-bg)}
-::-webkit-scrollbar-thumb{background:var(--blue-bright);border-radius:20px;border:3px solid var(--page-bg)}
-
-/* decorative backdrop, matches the site's dark hero sections */
-.bg-decor{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:
-  radial-gradient(120% 60% at 50% -10%, rgba(89,96,182,.35), transparent 60%),
-  radial-gradient(90% 50% at 100% 110%, rgba(27,69,232,.28), transparent 60%),
-  var(--page-bg)}
-.bg-decor::before,.bg-decor::after{content:"";position:absolute;border-radius:50%;filter:blur(60px);opacity:.35}
-.bg-decor::before{width:420px;height:420px;background:var(--blue-bright);top:-140px;left:-120px}
-.bg-decor::after{width:520px;height:520px;background:var(--blue);bottom:-220px;right:-160px}
-
-.wrap{position:relative;z-index:1;max-width:600px;margin:0 auto;padding:clamp(28px,6vw,56px) clamp(18px,4vw,24px) 40px}
-
-/* ---------- identidade ---------- */
-.identity{text-align:center;margin-bottom:clamp(22px,4vw,30px)}
-.identity .logo{width:clamp(92px,20vw,116px);height:auto;margin:0 auto 16px;border-radius:22px;background:#fff;padding:10px;box-shadow:0 18px 40px rgba(4,10,26,.45)}
-.identity h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(1.5rem,5vw,1.9rem);letter-spacing:-.02em;color:#fff;margin:0 0 8px;text-wrap:balance}
-.identity .subtitle{font-size:.98rem;line-height:1.55;color:var(--on-navy);max-width:34ch;margin:0 auto 12px;text-wrap:pretty}
-.identity .tagline{font-style:italic;font-weight:600;font-size:.98rem;color:var(--on-navy-accent);margin:0;max-width:30ch;margin-inline:auto;text-wrap:pretty}
-
-/* ---------- selos de prova ---------- */
-.trust{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:18px 0 clamp(24px,4.5vw,32px)}
-.trust span{display:inline-flex;align-items:center;gap:6px;font-family:Montserrat,sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.02em;color:#fff;background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.05));border:1px solid var(--on-navy-line);padding:8px 13px;border-radius:100px;white-space:nowrap;box-shadow:0 1px 0 rgba(255,255,255,.15) inset,0 8px 18px rgba(4,10,26,.35);backdrop-filter:blur(6px)}
-
-/* ---------- botões principais ---------- */
-.links{display:flex;flex-direction:column;gap:14px;margin-bottom:clamp(30px,5vw,40px)}
-.link-card{position:relative;display:flex;align-items:center;gap:14px;padding:16px 18px;background:linear-gradient(180deg,#fff,#fbfcff);border:1px solid var(--soft-border);border-radius:var(--r-lg);text-decoration:none;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s var(--ease);box-shadow:0 1px 0 rgba(255,255,255,.8) inset,0 10px 22px rgba(4,10,26,.16),0 2px 5px rgba(4,10,26,.06);isolation:isolate}
-.link-card::before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(150deg,rgba(255,255,255,.65),rgba(255,255,255,0) 45%);opacity:.8;pointer-events:none;z-index:-1}
-.link-card:hover{transform:translateY(-4px) scale(1.012);box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 26px 48px rgba(4,10,26,.22),0 0 0 1px rgba(27,69,232,.1),0 0 34px rgba(27,69,232,.22);border-color:var(--blue)}
-.link-card:active{transform:translateY(-1px) scale(.995)}
-.link-card .icon{flex:none;width:48px;height:48px;border-radius:15px;display:grid;place-items:center;font-size:1.4rem;background:radial-gradient(120% 120% at 30% 22%,#fff 0%,var(--tint) 55%,var(--tint-border) 100%);box-shadow:inset 0 2px 3px rgba(255,255,255,.95),inset 0 -4px 7px rgba(27,69,232,.16),0 6px 14px rgba(4,10,26,.14);transition:transform .4s var(--ease)}
-.link-card:hover .icon{transform:scale(1.06) rotate(-4deg)}
-.link-card .txt{flex:1;min-width:0}
-.link-card .txt strong{display:block;font-family:Montserrat,sans-serif;font-weight:800;font-size:1.02rem;color:var(--navy);margin-bottom:2px}
-.link-card .txt span{display:block;font-size:.86rem;line-height:1.4;color:var(--muted);text-wrap:pretty}
-
-.arrow-btn{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--tint);color:var(--blue);box-shadow:inset 0 1px 2px rgba(255,255,255,.9),0 4px 10px rgba(4,10,26,.12);transition:all .4s var(--ease)}
-.link-card:hover .arrow-btn{background:var(--blue);color:#fff;transform:translateX(3px);box-shadow:0 6px 16px rgba(27,69,232,.45),0 0 18px rgba(27,69,232,.35)}
-.arrow-btn svg{width:16px;height:16px;transition:transform .4s var(--ease)}
-.link-card:hover .arrow-btn svg{transform:translateX(1px)}
-
-.link-card.featured{background:linear-gradient(155deg,var(--blue-bright),var(--blue) 55%,var(--blue-dark));border-color:var(--blue-dark);box-shadow:0 1px 0 rgba(255,255,255,.25) inset,0 22px 46px rgba(27,69,232,.5),0 0 0 1px rgba(255,255,255,.06) inset,0 0 44px rgba(89,96,182,.4);animation:featuredGlow 3.4s ease-in-out infinite}
-.link-card.featured::before{background:radial-gradient(120% 140% at 15% 0%,rgba(255,255,255,.35),rgba(255,255,255,0) 55%);opacity:1}
-.link-card.featured .icon{background:radial-gradient(120% 120% at 30% 22%,rgba(255,255,255,.55),rgba(255,255,255,.14) 60%,rgba(255,255,255,.08) 100%);box-shadow:inset 0 2px 3px rgba(255,255,255,.6),inset 0 -4px 8px rgba(4,10,26,.18),0 6px 14px rgba(4,10,26,.28)}
-.link-card.featured .txt strong{color:#fff}
-.link-card.featured .txt span{color:var(--on-navy)}
-.link-card.featured .arrow-btn{background:rgba(255,255,255,.18);color:#fff;box-shadow:inset 0 1px 2px rgba(255,255,255,.3),0 4px 10px rgba(4,10,26,.2)}
-.link-card.featured:hover{transform:translateY(-4px) scale(1.012)}
-.link-card.featured:hover .arrow-btn{background:#fff;color:var(--blue);box-shadow:0 6px 16px rgba(4,10,26,.3),0 0 20px rgba(255,255,255,.5)}
-.link-card.featured .badge{position:absolute;top:-10px;right:16px;background:#fff;color:var(--blue);font-family:Montserrat,sans-serif;font-weight:800;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:100px;box-shadow:0 8px 16px rgba(4,10,26,.3)}
-
-@keyframes featuredGlow{
-  0%,100%{box-shadow:0 1px 0 rgba(255,255,255,.25) inset,0 22px 46px rgba(27,69,232,.5),0 0 0 1px rgba(255,255,255,.06) inset,0 0 34px rgba(89,96,182,.35)}
-  50%{box-shadow:0 1px 0 rgba(255,255,255,.25) inset,0 22px 46px rgba(27,69,232,.5),0 0 0 1px rgba(255,255,255,.06) inset,0 0 54px rgba(89,96,182,.55)}
-}
-
-/* ---------- cartão genérico ---------- */
-.card{position:relative;background:linear-gradient(180deg,#fff,#fbfcff);border-radius:var(--r-xl);border:1px solid var(--soft-border);padding:clamp(20px,4vw,28px);margin-bottom:16px;box-shadow:0 1px 0 rgba(255,255,255,.8) inset,0 14px 32px rgba(4,10,26,.16),0 2px 6px rgba(4,10,26,.05)}
-.card h2{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(1.1rem,3vw,1.28rem);color:var(--navy);margin:0 0 10px;letter-spacing:-.01em;text-wrap:balance}
-.card p{font-size:.96rem;line-height:1.62;color:var(--body);margin:0;text-wrap:pretty}
-.card p + p{margin-top:10px}
-.card strong{color:var(--navy)}
-
-/* ---------- avaliações ---------- */
-.rating{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.rating .stars{font-size:1.25rem;color:#F5A623;letter-spacing:2px}
-.rating .score{font-family:Montserrat,sans-serif;font-weight:800;font-size:1.6rem;color:var(--navy)}
-.rating .label{font-size:.82rem;color:var(--muted)}
-.rating-link{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-family:Montserrat,sans-serif;font-weight:700;font-size:.88rem;color:var(--blue);text-decoration:none}
-.rating-link .arrow-btn{width:28px;height:28px}
-.rating-link .arrow-btn svg{width:14px;height:14px}
-.rating-link:hover .arrow-btn{background:var(--blue);color:#fff;transform:translateX(3px);box-shadow:0 6px 14px rgba(27,69,232,.4)}
-
-/* ---------- PIX ---------- */
-.pix-card{background:var(--navy);border-radius:var(--r-xl);padding:clamp(20px,4vw,28px);margin-bottom:16px;color:#fff}
-.pix-card h2{color:#fff}
-.pix-card .pix-desc{font-size:.94rem;line-height:1.6;color:var(--on-navy);margin:0 0 16px;text-wrap:pretty}
-.pix-key{display:flex;align-items:center;justify-content:space-between;gap:10px;background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.04));border:1px solid var(--on-navy-line);border-radius:12px;padding:12px 14px;margin-bottom:12px;box-shadow:0 1px 0 rgba(255,255,255,.12) inset,0 8px 18px rgba(0,0,0,.25)}
-.pix-key-label{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--on-navy-muted);margin-bottom:3px}
-.pix-key-value{font-family:Montserrat,sans-serif;font-weight:800;font-size:1rem;color:#fff}
-.pix-copy-btn{width:100%;min-height:52px;border:none;border-radius:12px;background:linear-gradient(180deg,#fff,#f3f6ff);color:var(--blue);font-family:Montserrat,sans-serif;font-weight:800;font-size:.98rem;cursor:pointer;transition:all .35s var(--ease);box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 12px 26px rgba(0,0,0,.3),0 0 0 1px rgba(255,255,255,.06)}
-.pix-copy-btn:hover{background:linear-gradient(180deg,#fff,var(--tint));transform:translateY(-3px);box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 18px 34px rgba(0,0,0,.35),0 0 26px rgba(255,255,255,.25)}
-.pix-copy-btn:active{transform:translateY(-1px)}
-.pix-copied{max-height:0;overflow:hidden;opacity:0;font-size:.84rem;line-height:1.5;color:var(--on-navy-accent);margin:0;transition:all .4s var(--ease)}
-.pix-copied.is-visible{max-height:80px;opacity:1;margin-top:12px}
-
-/* ---------- localização ---------- */
-.map-frame{border-radius:var(--r-md);overflow:hidden;border:1px solid var(--soft-border);margin:14px 0;box-shadow:0 10px 24px rgba(4,10,26,.14)}
-.map-frame iframe{width:100%;height:220px;border:0;display:block}
-.address{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;line-height:1.55;color:var(--body);margin-bottom:14px}
-.address .pin{flex:none;font-size:1.1rem}
-.btn-route{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;border-radius:12px;background:linear-gradient(180deg,var(--tint),#e4ecff);color:var(--blue);font-family:Montserrat,sans-serif;font-weight:700;font-size:.92rem;text-decoration:none;border:1px solid var(--tint-border);transition:all .35s var(--ease);box-shadow:0 1px 0 rgba(255,255,255,.8) inset,0 8px 18px rgba(4,10,26,.08)}
-.btn-route .arrow-btn{width:28px;height:28px;background:#fff;box-shadow:inset 0 1px 2px rgba(255,255,255,.9),0 4px 10px rgba(4,10,26,.1)}
-.btn-route .arrow-btn svg{width:14px;height:14px}
-.btn-route:hover{background:linear-gradient(180deg,var(--blue),var(--blue-dark));color:#fff;border-color:var(--blue);transform:translateY(-3px);box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 18px 34px rgba(27,69,232,.35),0 0 26px rgba(27,69,232,.3)}
-.btn-route:hover .arrow-btn{background:#fff;color:var(--blue)}
-
-/* ---------- rodapé ---------- */
-footer.site-foot{text-align:center;color:var(--on-navy-muted);margin-top:clamp(20px,4vw,28px)}
-footer.site-foot .quote{font-style:italic;font-weight:600;font-size:.94rem;color:var(--on-navy-accent);margin:0 0 10px}
-footer.site-foot .meta{font-size:.78rem;line-height:1.6;margin:0}
-
-/* ---------- espaços reservados (vídeos e avaliações reais a inserir) ---------- */
-.ph-box{display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;margin-top:12px;border:1.5px dashed var(--tint-border);border-radius:var(--r-md);background:var(--soft);color:var(--muted);font-size:.85rem;line-height:1.45}
-.ph-video{aspect-ratio:16/9}
-.ph-reviews{min-height:96px}
-.ph-caption{margin-top:12px !important;font-style:italic}
-
-@media (max-width:400px){
-  .trust span{font-size:.68rem;padding:7px 11px}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.page{max-width:560px;margin:0 auto;background:var(--paper)}
+.top{background:var(--yellow)}
+.top-photo{position:relative;margin:0}
+.top-photo img:first-child{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 30%}
+.logo{position:absolute;left:var(--m);bottom:-30px;width:84px;height:84px;background:var(--white);padding:6px;border-radius:18px}
+.top-text{padding:46px var(--m) 28px;display:grid;gap:12px}
+h1{font-size:clamp(38px,11vw,54px);font-weight:900;line-height:.98;letter-spacing:-.04em}
+.lead{font-size:18px;font-weight:500;line-height:1.35;margin:0}
+.lead-2{font-size:21px;font-weight:800;font-family:'Montserrat',sans-serif;line-height:1.15;letter-spacing:-.02em;color:var(--blue);margin:0}
+.chips{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px;font-size:14px;font-weight:600}
+.chips li{background:var(--navy);color:var(--white);padding:7px 11px}
+.links{display:grid;gap:6px;padding:6px}
+.link{display:grid;grid-template-columns:1fr 44px;align-items:center;gap:12px;min-height:88px;padding:16px 14px 16px 16px;background:var(--white);text-decoration:none;transition:background-color .15s,color .15s,transform .2s var(--ease)}
+.link:hover{background:var(--navy);color:var(--white)}
+.link:active{transform:scale(.985)}
+.link strong{display:block;font-family:'Montserrat',sans-serif;font-weight:900;font-size:22px;line-height:1.1;letter-spacing:-.025em;margin-bottom:3px}
+.link span{display:block;font-size:15.5px;line-height:1.35}
+.link svg{width:32px;height:32px;justify-self:end}
+.link--main{background:var(--blue);color:var(--white);min-height:112px}
+.link--main strong{color:var(--yellow);font-size:27px}
+.link--main:hover{background:var(--navy)}
+.block{padding:32px var(--m)}
+.block h2{font-size:30px;font-weight:900;line-height:1;letter-spacing:-.035em;margin-bottom:14px}
+.about-photo{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center 25%}
+.rate{background:var(--sky)}
+.rate-row{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.rate-score{font-family:'Montserrat',sans-serif;font-weight:900;font-size:56px;line-height:1;letter-spacing:-.04em}
+.rate a{display:inline-flex;align-items:center;min-height:44px;font-weight:600;text-underline-offset:5px;text-decoration-thickness:2px}
+.pix{background:var(--blue);color:var(--white)}
+.pix strong{color:var(--yellow)}
+.pix-key{background:var(--navy);padding:14px 16px;margin:16px 0 8px;display:grid;gap:2px}
+.pix-key span{font-size:14px;color:#D6E0F2}
+.pix-key b{font-family:'Montserrat',sans-serif;font-weight:800;font-size:24px;font-variant-numeric:tabular-nums}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:54px;padding:12px 24px;border:0;border-radius:999px;background:var(--yellow);color:var(--navy);font-family:'Montserrat',sans-serif;font-weight:800;font-size:16px;text-decoration:none;cursor:pointer;transition:background-color .15s,transform .2s var(--ease)}
+.btn:hover{background:var(--white)}
+.btn:active{transform:scale(.98)}
+.copied{display:none;margin:12px 0 0;font-weight:500}
+.copied.is-visible{display:block}
+.place{background:var(--yellow)}
+.map{margin:14px 0 10px;height:230px;background:var(--paper-2)}
+.map iframe{display:block;width:100%;height:100%;border:0}
+.place .btn{background:var(--navy);color:var(--white)}
+.place .btn:hover{background:var(--blue)}
+footer{background:var(--navy);color:var(--white);padding:26px var(--m) calc(26px + env(safe-area-inset-bottom))}
+footer p:first-child{font-size:19px;font-weight:500;line-height:1.3}
+footer small{font-size:14px;color:#D6E0F2}
+.pix :focus-visible,footer :focus-visible{outline-color:var(--yellow)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
-
-<div class="bg-decor" aria-hidden="true"></div>
-
-<main class="wrap">
-
-  <!-- BLOCO 1: topo / identidade -->
-  <header class="identity">
-    <img class="logo" src="logo-arca.png" alt="ARCA Sorocaba" width="300" height="300">
+<div class="page">
+<header class="top">
+  <figure class="top-photo" style="margin:0">
+    <img src="abraco-hero-760.webp" width="760" height="950" alt="Duas pessoas da comunidade ARCA Sorocaba se abraçando, vistas de costas" fetchpriority="high">
+    <img class="logo" src="logo-arca.png" alt="" width="300" height="300">
+  </figure>
+  <div class="top-text">
     <h1>ARCA Sorocaba</h1>
-    <p class="subtitle">Acolhemos pessoas adultas com deficiência intelectual há mais de 10 anos.</p>
-    <p class="tagline">Aqui, ninguém é abandonado quando a infância acaba.</p>
-  </header>
-
-  <!-- BLOCO 2: prova imediata -->
-  <div class="trust">
-    <span>⭐ 5,0 no Google</span>
-    <span>💙 +10 anos em Sorocaba</span>
-    <span>🌍 Rede internacional L'Arche</span>
+    <p class="lead">Acolhemos pessoas adultas com deficiência intelectual há mais de 10 anos.</p>
+    <p class="lead-2">Aqui, ninguém é abandonado quando a infância acaba.</p>
+    <ul class="chips">
+      <li>5,0 no Google</li>
+      <li>+10 anos em Sorocaba</li>
+      <li>Rede internacional L'Arche</li>
+    </ul>
   </div>
+</header>
 
-  <!-- BLOCO 3: botões principais -->
-  <nav class="links" aria-label="Formas de ajudar a ARCA">
-    <a class="link-card featured" href="https://www.arcasorocaba.com.br/" target="_blank" rel="noopener">
-      <span class="badge">Destaque</span>
-      <span class="icon">💙</span>
-      <span class="txt">
-        <strong>Seja um Guardião da ARCA</strong>
-        <span>Doe todo mês e mantenha esta casa de portas abertas.</span>
-      </span>
-      <span class="arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
-    </a>
+<nav class="links" aria-label="Links principais">
+  <a class="link link--main" href="https://www.arcasorocaba.com.br/" target="_blank" rel="noopener">
+    <div><strong>Seja um Guardião da ARCA</strong><span>Doe todo mês e mantenha esta casa de portas abertas.</span></div>
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 36 36 12M16 12h20v20" fill="none" stroke="currentColor" stroke-width="5"/></svg>
+  </a>
+  <a class="link" href="https://www.instagram.com/channel/AbY5HcxELzVrupCD/" target="_blank" rel="noopener">
+    <div><strong>Eventos do mês</strong><span>Feijoada, almoço solidário, bazar e mais.</span></div>
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 36 36 12M16 12h20v20" fill="none" stroke="currentColor" stroke-width="5"/></svg>
+  </a>
+  <a class="link" href="https://chat.whatsapp.com/GYWs40T8hMe7V15NZbAdEo" target="_blank" rel="noopener">
+    <div><strong>Grupo do Bazar</strong><span>Roupas e acessórios acessíveis. Cada peça ajuda.</span></div>
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 36 36 12M16 12h20v20" fill="none" stroke="currentColor" stroke-width="5"/></svg>
+  </a>
+  <a class="link" href="https://wa.me/5515997124769?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20ARCA%20Sorocaba." target="_blank" rel="noopener">
+    <div><strong>Falar com a ARCA</strong><span>Dúvidas, visitas, parcerias, voluntariado.</span></div>
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 36 36 12M16 12h20v20" fill="none" stroke="currentColor" stroke-width="5"/></svg>
+  </a>
+</nav>
 
-    <a class="link-card" href="https://www.instagram.com/channel/AbY5HcxELzVrupCD/" target="_blank" rel="noopener">
-      <span class="icon">🍽️</span>
-      <span class="txt">
-        <strong>Eventos do mês</strong>
-        <span>Feijoada, almoço solidário, bazar e mais.</span>
-      </span>
-      <span class="arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
-    </a>
+<section class="pix block" aria-labelledby="pix-title">
+  <h2 id="pix-title">Doação direta pelo PIX</h2>
+  <p>Manter a ARCA custa cerca de <strong>R$ 30 mil por mês</strong>. Cada doação sustenta uma rotina de cuidado, convivência e dignidade.</p>
+  <div class="pix-key"><span>Chave PIX oficial (CNPJ)</span><b>19.831.448/0001-85</b></div>
+  <button type="button" class="btn" id="copyPix">Copiar chave PIX</button>
+  <p class="copied" id="copyMsg" role="status">Chave copiada. Obrigado por apoiar a ARCA. Agora abra o app do seu banco, escolha PIX, cole a chave e confirme o valor.</p>
+</section>
 
-    <a class="link-card" href="https://chat.whatsapp.com/GYWs40T8hMe7V15NZbAdEo" target="_blank" rel="noopener">
-      <span class="icon">🛍️</span>
-      <span class="txt">
-        <strong>Grupo do Bazar</strong>
-        <span>Roupas e acessórios acessíveis. Cada peça ajuda.</span>
-      </span>
-      <span class="arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
-    </a>
-
-    <a class="link-card" href="https://wa.me/5515997124769?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20ARCA%20Sorocaba." target="_blank" rel="noopener">
-      <span class="icon">💬</span>
-      <span class="txt">
-        <strong>Falar com a ARCA</strong>
-        <span>Dúvidas, visitas, parcerias, voluntariado.</span>
-      </span>
-      <span class="arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span>
-    </a>
-  </nav>
-
-  <!-- BLOCO 4: quem somos -->
-  <section class="card">
-    <h2>Quem somos</h2>
+<section aria-labelledby="sobre-title">
+  <img class="about-photo" src="comunidade-700.webp" width="700" height="1049" loading="lazy" alt="Um homem e uma mulher da ARCA abraçados e sorrindo, fazendo um coração com as mãos">
+  <div class="block">
+    <h2 id="sobre-title">Quem somos</h2>
     <p>A ARCA Sorocaba é uma associação beneficente que acolhe pessoas adultas com deficiência intelectual. Aqui elas encontram oficinas, convivência, acompanhamento de equipe e, principalmente, <strong>autonomia</strong>. A ARCA também acompanha e orienta as famílias.</p>
     <p>Não recebemos verba pública. A casa se mantém com doações, bazar e ações solidárias.</p>
-  </section>
+  </div>
+</section>
 
-  <!-- BLOCO 5: vídeos dos acolhidos. Oculto até os vídeos chegarem; o título e a legenda já estão prontos.
-<section class="card">
-    <h2>Quem melhor para falar da ARCA do que quem vive nela?</h2>
-    <div class="ph-box ph-video"><span>Vídeos dos acolhidos: a inserir (autorização confirmada)</span></div>
-    <p class="ph-caption">Eles não estão aqui porque não tinham outro lugar. Estão aqui porque este é o lugar deles.</p>
-  </section>
-  -->
+<section class="rate block" aria-labelledby="rate-title">
+  <h2 id="rate-title">Avaliações no Google</h2>
+  <div class="rate-row"><span class="rate-score">5,0</span><span>nota média no Google</span></div>
+  <a href="https://www.google.com/maps/search/?api=1&query=ARCA+Sorocaba+Av.+Santos+Dumont+100+Sorocaba+SP" target="_blank" rel="noopener">Ver todas as avaliações no Google</a>
+</section>
 
-  <!-- BLOCO 6: avaliações do Google -->
-  <section class="card">
-    <h2>Avaliações no Google</h2>
-    <div class="rating">
-      <span class="score">5,0</span>
-      <div>
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <div class="label">nota média no Google</div>
-      </div>
-    </div>
-    <!-- Carrossel com 3 avaliações reais do Google entra aqui -->
-    <a class="rating-link" href="https://www.google.com/maps/search/?api=1&query=ARCA+Sorocaba+Av.+Santos+Dumont+100+Sorocaba+SP" target="_blank" rel="noopener">Ver todas as avaliações no Google <span class="arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span></a>
-  </section>
+<section class="place block" aria-labelledby="place-title">
+  <h2 id="place-title">Onde estamos</h2>
+  <p>Av. Santos Dumont, 100, Jardim Ana Maria, Sorocaba/SP, 18065-290</p>
+  <div class="map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa até a ARCA Sorocaba" src="https://www.google.com/maps?q=Av.+Santos+Dumont,+100,+Jardim+Ana+Maria,+Sorocaba+-+SP,+18065-290&output=embed"></iframe></div>
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Santos+Dumont,+100,+Jardim+Ana+Maria,+Sorocaba+-+SP,+18065-290" target="_blank" rel="noopener">Como chegar</a>
+</section>
 
-  <!-- BLOCO 7: doação direta via PIX -->
-  <section class="pix-card">
-    <h2>Doação direta pelo PIX</h2>
-    <p class="pix-desc">Manter a ARCA custa cerca de <strong style="color:#fff">R$ 30 mil por mês</strong>. Cada doação sustenta uma rotina de cuidado, convivência e dignidade.</p>
-    <div class="pix-key">
-      <div>
-        <span class="pix-key-label">Chave PIX oficial · CNPJ</span>
-        <strong class="pix-key-value">19.831.448/0001-85</strong>
-      </div>
-    </div>
-    <button type="button" id="pixCopyBtn" class="pix-copy-btn">Copiar chave PIX</button>
-    <p role="status" id="pixCopiedMsg" class="pix-copied">Chave copiada. Obrigado por apoiar a ARCA. Agora abra o app do seu banco, escolha PIX, cole a chave e confirme o valor.</p>
-  </section>
-
-  <!-- BLOCO 8: onde estamos -->
-  <section class="card">
-    <h2>Onde estamos</h2>
-    <div class="address">
-      <span class="pin">📍</span>
-      <span>Av. Santos Dumont, 100, Jardim Ana Maria, Sorocaba/SP, 18065-290</span>
-    </div>
-    <div class="map-frame">
-      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa até a ARCA Sorocaba" src="https://www.google.com/maps?q=Av.+Santos+Dumont,+100,+Jardim+Ana+Maria,+Sorocaba+-+SP,+18065-290&output=embed"></iframe>
-    </div>
-    <a class="btn-route" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Santos+Dumont,+100,+Jardim+Ana+Maria,+Sorocaba+-+SP,+18065-290" target="_blank" rel="noopener">Como chegar <span class="arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></span></a>
-  </section>
-
-
-  <!-- BLOCO 10: rodapé -->
-  <footer class="site-foot">
-    <p class="quote">"A doação é a linguagem mais linda do amor."</p>
-    <p class="meta">ARCA Sorocaba · ABAAS · CNPJ 19.831.448/0001-85</p>
-  </footer>
-
-</main>
-
+<footer>
+  <p>“A doação é a linguagem mais linda do amor.”</p>
+  <p><small>ARCA Sorocaba, ABAAS. CNPJ 19.831.448/0001-85</small></p>
+</footer>
+</div>
 <script>
 (function () {
-  'use strict';
-  var pixCopyBtn = document.getElementById('pixCopyBtn');
-  var pixCopiedMsg = document.getElementById('pixCopiedMsg');
-  var PIX_KEY = '19.831.448/0001-85';
-  var pixTimer;
-
-  if (pixCopyBtn) {
-    pixCopyBtn.addEventListener('click', function () {
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(PIX_KEY).catch(function () {});
-      }
-      pixCopiedMsg.classList.add('is-visible');
-      clearTimeout(pixTimer);
-      pixTimer = setTimeout(function () {
-        pixCopiedMsg.classList.remove('is-visible');
-      }, 9000);
-    });
+  var btn = document.getElementById('copyPix'), msg = document.getElementById('copyMsg'), KEY = '19.831.448/0001-85';
+  function fallback() {
+    var a = document.createElement('textarea'); a.value = KEY; a.style.position = 'fixed'; a.style.opacity = '0';
+    document.body.appendChild(a); a.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    a.remove();
   }
+  btn.addEventListener('click', function () {
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(KEY).catch(fallback); else fallback();
+    msg.classList.add('is-visible');
+  });
 })();
 </script>
 </body>
